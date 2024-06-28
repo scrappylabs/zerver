@@ -75,4 +75,4 @@ def delete_item(item_id):
     return ('', 204)
 
 if __name__ == '__main__':
-    app.run(host='10.101.145.133',debug=True)
+    app.run(ssl_context='adhoc',host='10.101.145.133',debug=True)

@@ -1,0 +1,72 @@
+.MainHome {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh; /* Use the full height of the viewport */
+}
+
+.HomeNavigationButton {
+  width: 30vw; /* Use viewport width for scalability */
+  height: 30vw; /* Maintain aspect ratio based on width */
+  max-width: 600px; /* Set a max-width to avoid overly large buttons */
+  max-height: 600px; /* Set a max-height to match max-width */
+  font-size: 3vw; /* Scale font size with the width of the viewport */
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.HomeNavigationButton:hover {
+  background-color: #0056b3;
+}
+
+.InstructorHome_TakeAttendance {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  color: blue;
+  font-size: 3vw;
+}
+
+.InstructorHome_Back {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  color: red;
+  font-size: 3vw;
+}
+
+.InstructorHome_TakeAttendance Button {
+  width: 20vw; /* Smaller buttons for this element */
+  height: 20vw; /* Maintain aspect ratio */
+  max-width: 300px; /* Set a max-width */
+  max-height: 300px; /* Set a max-height */
+  font-size: 2vw; /* Scale font size */
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.webcam {
+  height: 80vh;
+  width: 80vw;
+  transform: scaleX(-1);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .HomeNavigationButton,
+  .InstructorHome_TakeAttendance Button {
+    width: 80vw; /* Bigger relative to viewport on smaller screens */
+    height: 80vw;
+    font-size: 5vw;
+  }
+}
